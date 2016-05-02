@@ -6,6 +6,14 @@ if ($page->theme_is_addon) {
 	$theme_path = '/themes/Slate';
 } 
 $page->head_css[] = $theme_path . '/bootstrap.css';
+$page->jQueryCode .= '$(window).load(function() {
+	$( "button.nav-toggle" ).click(function() {
+		$( "nav" ).toggle( "slow" );
+	});
+	$(\'a[href^=#]\').on(\'click\', function(e){ var href = $(this).attr(\'href\'); 
+	$(\'html, body\').animate({ scrollTop:$(href).offset().top },\'slow\'); 
+	e.preventDefault(); });
+});'; 
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -90,17 +98,5 @@ $page->head_css[] = $theme_path . '/bootstrap.css';
 		</footer>
 	</div>
 
-
-<script>	
-$(window).load(function() {
-	$( "button.nav-toggle" ).click(function() {
-		$( "nav" ).toggle( "slow" );
-	});
-	$('a[href^=#]').on('click', function(e){ var href = $(this).attr('href'); 
-	$('html, body').animate({ scrollTop:$(href).offset().top },'slow'); 
-	e.preventDefault(); });
-});
-
-</script>
 </body>
 </html>
