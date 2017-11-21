@@ -3,8 +3,8 @@
 /**
  *	name: 	style.css (start)
  *	author:	Barbara Bothe - http://barbara-bothe.de
- *	date: 	10.03.2014
- *	use: 	Slate 1.0 - Template for gpEasy 2.4+
+ *	date: 	21.11.2017
+ *	use: 	Slate 1.2 - Template for gpEasy 2.4+
  */
 
 @import url("../page/style.css");
@@ -40,7 +40,7 @@ nav ul li ul li {
 }
 nav ul li a,
 nav ul li ul li a {
-	text-decoration:none; 
+	text-decoration:none;
 	padding:5px;
 	color:#d6d6d6;
 	border-bottom: 1px solid transparent;
@@ -49,8 +49,8 @@ nav ul li a:hover,
 nav ul li ul li a:hover,
 nav ul li a.selected,
 nav ul li ul li a.selected{
-	background:none; 
-	color:#fff; 
+	background:none;
+	color:#fff;
 	border-color:#fff;
 	text-decoration: none;
 }
@@ -59,18 +59,18 @@ button.nav-toggle {
 	color:#eee;
 	background-color: #222;
 	border: none;
-	opacity: 0.5;       /* modern browser */  
-    -moz-opacity: 0.5;  /* older Mozilla browser */  
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE8 in Standard Compliant Mode */  
+	opacity: 0.5;       /* modern browser */
+    -moz-opacity: 0.5;  /* older Mozilla browser */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE8 in Standard Compliant Mode */
     filter:alpha(opacity=50); /* IE5.x -7.0 */
 }
 button.nav-toggle:hover,
 button.nav-toggle:active,
 button.nav-toggle:focus {
 	color:#fff;
-	opacity: 1;       /* modern browser */  
-    -moz-opacity: 1;  /* older Mozilla browser */  
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE8 in Standard Compliant Mode */  
+	opacity: 1;       /* modern browser */
+    -moz-opacity: 1;  /* older Mozilla browser */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE8 in Standard Compliant Mode */
     filter:alpha(opacity=100); /* IE5.x -7.0 */
 }
 
@@ -113,4 +113,4 @@ header h1{font-size:2em;line-height:1em;margin-top:0;font-weight:100;}
 	.contactform input.submit {
    		width: auto;
 	}
-} 
+}

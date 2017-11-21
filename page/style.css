@@ -2,12 +2,12 @@
 /**
  *	name: 	style.css (page)
  *	author:	Barbara Bothe - http://barbara-bothe.de
- *	date: 	10.03.2014
- *	use: 	Slate 1.0 - Template for gpEasy 2.4+
+ *	date: 	21.11.2017
+ *	use: 	Slate 1.2 - Template for gpEasy 2.4+
  */
- 
+
  @import url("../bootstrap.css");
- 
+
 /*------------------------------------*\
   RESET
 \*------------------------------------*/
@@ -114,7 +114,7 @@ nav ul li ul li {
 nav ul li a,
 nav ul li ul li a {
 	display: block;
-	text-decoration:none; 
+	text-decoration:none;
 	padding:5px;
 	color:#d6d6d6;
 }
@@ -123,7 +123,7 @@ nav ul li ul li a:hover,
 nav ul li a.selected,
 nav ul li a.childselected,
 nav ul li ul li a.selected {
-	color:#AEFF00; 
+	color:#AEFF00;
 	text-decoration: none;
 }
 button.nav-toggle {
@@ -132,18 +132,18 @@ button.nav-toggle {
 	margin:5px;
 	color:#222;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-	opacity: 0.7;       /* modern browser */  
-    -moz-opacity: 0.7;  /* older Mozilla browser */  
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE8 in Standard Compliant Mode */  
+	opacity: 0.7;       /* modern browser */
+    -moz-opacity: 0.7;  /* older Mozilla browser */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; /* IE8 in Standard Compliant Mode */
     filter:alpha(opacity=70); /* IE5.x -7.0 */
 }
 button.nav-toggle:hover,
 button.nav-toggle:active,
 button.nav-toggle:focus {
 	color:#444;
-	opacity: 1;       /* modern browser */  
-    -moz-opacity: 1;  /* older Mozilla browser */  
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE8 in Standard Compliant Mode */  
+	opacity: 1;       /* modern browser */
+    -moz-opacity: 1;  /* older Mozilla browser */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; /* IE8 in Standard Compliant Mode */
     filter:alpha(opacity=100); /* IE5.x -7.0 */
 }
 
@@ -196,7 +196,7 @@ form label {float:left;padding: 0 5px 5px 0;}
 }
 #content input[type="text"],
 #content input[type="password"],
-#content textarea,input.text { 
+#content textarea,input.text {
 	border: 1px solid #ccc;
 	padding:10px;
 }
@@ -328,13 +328,14 @@ footer a:hover {
 #loginform,#loginform label{background:none!important;border:none!important;color:#444!important}
 .login_text,.login_submit{font-size:0.9em!important}
 .loginform input[type="submit"],input.submit{padding:5px;}
-.gp_gallery{clear:both;margin:15px 0 15px 15px;padding:0;}	
+.gp_gallery{clear:both;margin:15px 0 15px 15px;padding:0;}
 .gp_gallery li{float:left;width:125px;height:150px;list-style:none;display:inline-block;margin:0 15px 15px 0;padding:2px;background:none;border:none;color:#d6d6d6;position:relative;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
-.gp_gallery div{text-align:center;padding:0;margin:120px 0 0 0;}
-.gp_gallery img{width:100px;height:100px;}
-.gp_gallery .caption{color:#444;}
+.gp_gallery div{text-align:center;padding:0;margin:120px 0 0 0;width: auto;}
+.gp_gallery img{position:static;width:100px;height:100px;}
+.gp_gallery span.caption{color:#444;font-size: 14px;margin: 0;width: auto;}
 .gp_galleries li{width:125px;height:195px;background:none;}
 .gp_galleries img{width:100px;height:100px;}
+.gp_gallery a.gallery_gallery, .gp_gallery a.gallery_gallery:link, .gp_gallery a.gallery_gallery:active, .gp_gallery a.gallery_gallery:visited, .gp_gallery a.gallery_gallery:hover, .gp_gallery a.gallery_gallery:focus {background:none;}
 .gpArea_Simple_Search form input.submit{margin-left:10px;}
 
 
